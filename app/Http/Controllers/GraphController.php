@@ -40,7 +40,8 @@ class GraphController extends Controller
                 'message' => $request->message
             ])->getGraphNode()->asArray();
             if($response['id']){
-                // post created
+               echo " Something";
+//             create post
             }
         } catch (FacebookSDKException $e) {
             dd($e); // handle exception
