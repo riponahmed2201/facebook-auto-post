@@ -78,7 +78,7 @@ class GraphController extends Controller
 
     public function publishToPage(Request $request){
 
-        $page_id = 'YOUR_PAGE_ID';
+        $page_id = '104731277589797';
 
         try {
             $post = $this->api->post('/' . $page_id . '/feed', array('message' => $request->message), $this->getPageAccessToken($page_id));
